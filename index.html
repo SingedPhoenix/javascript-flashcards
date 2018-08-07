@@ -6,22 +6,194 @@
   <link href="css/styles.css" rel="stylesheet" type="text/css">
   <script src="js/jquery-3.3.1.js"></script>
   <script src="js/scripts.js"></script>
-  <title>Peek-a-boo</title>
+  <title>JavaScript Flashcards</title>
 </head>
 
 <body>
-  <div class="jumbotron">
-    <h1>JavaScript & jQuery Flashcards</h1>
-    <p>Test your vocabulary knowledge of everyone's most hated programming language</p>
+  <!--Header Section-->
+  <div class="jumbotron text-center">
+    <h1 class="display-3">JavaScript & jQuery Flashcards</h1>
+    <p class="lead">Test your vocabulary knowledge of everyone's most hated programming language</p>
   </div>
 
-<div class="card">
-  <div class="cardbody">
-    <h5 class="card-title">JavaScript</h5>
-    <p class="card-text">A horrible lesson in pain and misery!!!</p>
-  </div>
+  <div class="container">
+
+    <div class="intro">
+      <h4>Learn some common JavaScript terms...</h4>
+      <p>Hello, and welcome to our JavaScript and jQuery vocab hovercard grid. To learn more about regularly used syntax, simply hover your mouse-pointer over the term's card to reveal the definition. Beware of a monster though!!!!</p>
+    </div>
+
+<div class="grid">
+    <div class="row first-row">
+      <div class="card col-md-3 javascript">
+        <div class="card-body">
+          <h5 class="text-center">JavaScript</h5>
+          <p id="javascript" class="definition">An object-oriented computer programming language commonly used to create interactive effects within web browsers.</p>
+        </div>
+      </div>
+
+      <div class="card col-md-3 operators">
+        <div class="card-body">
+          <h5 class="text-center">Operators</h5>
+          <p id="operators" class="definition">Used to assign values, compare values, perform arithmetic operations, and more.</p>
+        </div>
+      </div>
+
+      <div class="card col-md-3 variables">
+        <div class="card-body">
+          <h5 class="text-center">Variables</h5>
+          <p id="variables" class="definition">Containers for storing data values.</p>
+        </div>
+      </div>
+
+      <div class="card col-md-3 varinameconv">
+        <div class="card-body">
+          <h5 class="text-center">Variable Naming Convention</h5>
+          <p id="varinameconv" class="definition">The rules and conventions for naming your variables.</p>
+        </div>
+      </div>
+
+    </div>
+    <!--End of .first-row-->
+
+    <div class="row second-row">
+      <div class="card col-md-3 functions">
+        <div class="card-body">
+          <h5 class="text-center">Functions</h5>
+          <p id="functions" class="definition">A set of statements that performs a task or calculates a value.</p>
+        </div>
+      </div>
+
+      <div class="card col-md-3 methods">
+        <div class="card-body">
+          <h5 class="text-center">Methods</h5>
+          <p id="methods" class="definition">Actions that can be performed on objects.</p>
+        </div>
+      </div>
+
+      <div class="card col-md-3 arguments">
+        <div class="card-body">
+          <h5 class="text-center">Arguments</h5>
+          <p id="arguments" class="definition">The real values passed to (and received by) the function.</p>
+        </div>
+      </div>
+
+      <div class="card col-md-3 parameters">
+        <div class="card-body">
+          <h5 class="text-center">Parameters</h5>
+          <p id="parameters" class="definition">The names listed in the function definition.</p>
+        </div>
+      </div>
+
+    </div>
+    <!--End of .second-row-->
+
+    <div class="row third-row">
+      <div class="card col-md-3 return">
+        <div class="card-body">
+          <h5 class="text-center">Return</h5>
+          <p id="return" class="definition">Ends function execution and specifies a value to be returned to the function caller.</p>
+        </div>
+      </div>
+
+      <div class="card col-md-3 changing-methods">
+        <div class="card-body">
+          <h5 class="text-center">Changing Methods</h5>
+          <p id="changing-methods" class="definition">Calling a method directly on the return value of another method.</p>
+        </div>
+      </div>
+
+      <div class="card col-md-3 strings">
+        <div class="card-body">
+          <h5 class="text-center">Strings</h5>
+          <p id="strings" class="definition">Zero or more characters written inside quotes used for storing and manipulating text.</p>
+        </div>
+      </div>
+
+      <div class="card col-md-3 booleans">
+        <div class="card-body">
+          <h5 class="text-center">Booleans</h5>
+          <p id="booleans" class="definition">Data type that can only take the values true or false.</p>
+        </div>
+      </div>
+
+    </div>
+    <!--End of .third-row-->
+
+    <div class="row fourth-row">
+      <div class="card col-md-3 undefined">
+        <div class="card-body">
+          <h5 class="text-center">Undefined</h5>
+          <p id="undefined" class="definition">A variable has been declared but has not yet been assigned a value.</p>
+        </div>
+      </div>
+
+      <div class="card col-md-3 walrus">
+        <div class="card-body">
+          <h5 class="text-center">Walrus</h5>
+          <img src="img/walrus.jpg" alt="walrus man" id="walrus" class="definition img-fluid">
+        </div>
+      </div>
+
+      <div class="card col-md-3 nan">
+        <div class="card-body">
+          <h5 class="text-center">NaN</h5>
+          <p id="nan" class="definition">Not-a-Number.</p>
+        </div>
+      </div>
+
+      <div class="card col-md-3 escape">
+        <div class="card-body">
+          <h5 class="text-center">Escape</h5>
+          <p id="escape" class="definition">The escape() function encodes a string.</p>
+        </div>
+      </div>
+
+    </div>
+    <!--End of .fourth-row-->
+
+    <div class="row fifth-row">
+      <div class="card col-md-3 alerts">
+        <div class="card-body">
+          <h5 class="text-center">Alert</h5>
+          <p id="alerts" class="definition">Displays an alert box with a specified message and an OK button.</p>
+        </div>
+      </div>
+
+      <div class="card col-md-3 comments">
+        <div class="card-body">
+          <h5 class="text-center">Comments</h5>
+          <p id="comments" class="definition">Single line comments start with //. Any text between // and the end of the line will be ignored by JavaScript (will not be executed).</p>
+        </div>
+      </div>
+
+      <div class="card col-md-3 jquery">
+        <div class="card-body">
+          <h5 class="text-center">jQuery</h5>
+          <p id="jquery" class="definition">A JavaScript library that allows web developers to add extra functionality to their websites.</p>
+        </div>
+      </div>
+
+      <div class="card col-md-3 attributes">
+        <div class="card-body">
+          <h5 class="text-center">Attributes</h5>
+          <p id="attributes" class="definition">Provides additonal information about an HTML element.</p>
+        </div>
+      </div>
+
+    </div>
+    <!--End of .fifth-row-->
 </div>
+  </div>
+  <!--End of Container-->
 
+  <footer class="page-footer">
+    <div class="footer-copyright text-center text-white py-4">
+      <span class="text-center">&copy
+          <em>Copyright 2018</em>
+        </span>
+    </div>
+  </footer>
 </body>
 
 </html>
